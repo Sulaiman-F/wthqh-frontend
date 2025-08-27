@@ -89,9 +89,9 @@ export const authAPI = {
     // expected: { success, accessToken, refreshToken, user }
     return data;
   },
-  async signup(email, password) {
+  async signup(name, email, password) {
     const { data } = await axios.post(`${BASE}/auth/signup`, {
-      name: email.split("@")[0],
+      name,
       email,
       password,
     });
