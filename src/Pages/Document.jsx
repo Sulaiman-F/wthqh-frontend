@@ -215,7 +215,7 @@ export default function Document() {
             )}
           </button>
           <FileText className="text-blue-600" size={20} />
-          <h1 className="text-base md:text-2xl font-bold text-neutral-800">
+          <h1 className="text-sm md:text-2xl font-bold text-neutral-800">
             {doc.title}
           </h1>
         </div>
@@ -293,15 +293,14 @@ export default function Document() {
       </div>
 
       {shareUrl && (
-        <div className="mb-6 rounded-lg border border-neutral-200 bg-white p-3 text-sm shadow-sm">
-          {t("publicLink")}{" "}
+        <div className="mb-6 rounded-lg border border-neutral-200 bg-white p-3 text-sm shadow-sm ">
           <a
             className="text-blue-600 underline"
             href={shareUrl}
             target="_blank"
             rel="noreferrer"
           >
-            {shareUrl}
+            {t("publicLink")}{" "}
           </a>
         </div>
       )}
