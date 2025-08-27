@@ -215,7 +215,9 @@ export default function Document() {
             )}
           </button>
           <FileText className="text-blue-600" size={20} />
-          <h1 className="text-2xl font-bold text-neutral-800">{doc.title}</h1>
+          <h1 className="text-lg md:text-2xl font-bold text-neutral-800">
+            {doc.title}
+          </h1>
         </div>
         <div className="hidden gap-2 md:flex">
           <button
